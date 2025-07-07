@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgb(66, 39, 92) !important;
+    background-color: rgb(38, 6, 54) !important;
 }
 
 /* mi clase */
@@ -17,24 +17,394 @@ body{
     
 }
 
-header{
-    background-color: rgba(28, 27, 29, 0.842);
-    height: 50px;
-}
 
+/* geneal */
 .max{
-    max-width: 1000px !important;
+    max-width: 900px !important;
+    position: relative !important;
 }
 
 
+.material-symbols-outlined{
+    transform: scale(1.2);
+    color: rgb(255, 211, 65);
+}
+
+
+.section-tittle{
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: rgb(255, 211, 65);
+}
+
+.back-start{
+    position: absolute;
+    height: 1150px;
+    width: 100%;
+    background-color: rgb(60, 35, 87);
+    top: 650px;
+    z-index: -1;
+}
+
+
+.alerta{
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(18, 168, 18);
+    text-align: center;
+    font-weight: 500px;
+    font-size: 1.1rem;
+    bottom: -30px;
+    transition: 0.5s ease;
+}
+
+.alerta-up{
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(18, 168, 18);
+    text-align: center;
+    font-weight: 500px;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+}
+
+
+
+
+/* header */
+
+header{
+    height: 50px;
+    justify-content: space-between !important;
+    padding: 50px 70px !important;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.logo{
+    color: rgb(255, 211, 65);
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.logo:hover{
+    color: rgb(255, 196, 0);
+}
+
+.links-box{
+    gap: 30px;
+}
+
+.links{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.links:hover{
+    color: rgb(255, 208, 0);
+}
+
+
+
+
+/* vista principal */
 
 .main{
-    height: 500px;
-    border: 1px solid white;
+    margin-top: 200px !important;
+    margin-bottom: 250px !important;
 }
 
+.main, .proyects, .contact{
+    margin-bottom: 100px;
+}
+
+.my-info{
+    gap: 0px;
+}
+
+.btn-info{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hire, .cv{
+    height: 50px;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+.hire{
+    width: 150px;
+    transition: 0.3s;
+    color: rgb(38, 6, 54);
+    font-weight: 700;
+    background-color:rgb(255, 211, 65);
+    border: 2px solid rgba(255, 211, 65, 0);
+}
+
+.cv{
+    font-weight: 700;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(255, 211, 65);
+    color: rgb(255, 211, 65);
+    transition: 0.3s;
+}
+
+.hire:hover{
+   background-color: rgba(0, 0, 0, 0);
+   border: 2px solid rgb(255, 211, 65);
+   color: rgb(255, 211, 65);
+}
+
+.cv:hover{
+    color: rgb(38, 6, 54);
+    background-color:rgb(255, 211, 65);
+    border: 2px solid rgba(255, 211, 65, 0);
+}
+
+.my-foto-box{
+    height: 230px;
+    width: 230px;
+}
 .my-foto{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
+    box-shadow: 0px 0px 15px black;
+}
+
+.my-name{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.my-profession{
+    margin-bottom: 20px;
+    color: rgb(207, 207, 207);
+}
+
+.pro-color{
+    color: rgb(255, 211, 65);
+}
+
+.button-perfil-box{
+    gap: 20px;
+}
+
+
+/* Seccion Proyectos */
+
+.proyects{
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Seccion Skills */
+
+.skills{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.icons-box{
+    gap: 10px;
+    background-color: rgb(60, 35, 87);
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 20px;
+}
+
+
+.tittle-tec{
+    width: 70px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.icons{
+    height: 70px;
+    width: 70px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.boos{
+    width: 90px;
+    height: 80px;
+}
+
+.t-boos{
+    width: 90px;
+}
+
+.icons:hover{
+    transform: scale(1.2);
+}
+
+
+/* Seccion Contacto */
+
+.contact{
+    width: 100%;
+}
+
+
+/* social */
+
+.social-box{
+    justify-content: start;
+    gap: 20px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.logos-box{
+    background-color: rgb(60, 35, 87);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.caja-img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.caja-img:hover{
+    transform: scale(1.2);
+}
+
+
+.logos{
+    height: 100%;
+}
+
+/* email */
+
+.email-box{
+    gap: 20px;
+}
+
+.adress-box{
+    background-color: rgb(15, 12, 19);
+    height: 30px;
+    width: 100%;
+    padding: 20px;
+    justify-content: start;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+
+@media only screen and (max-width: 750px) {
+
+    *{
+    text-align: center;
+    }
+
+    .main{
+        margin-top: 50px !important;
+        margin-bottom: 100px !important;
+    }
+    
+    header{
+        display: none !important; 
+    }
+
+    .max{
+        max-width: 90% !important;
+        position: relative !important;
+    }
+
+    .section-tittle {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+
+    .my-foto-box {
+        height: 150px;
+        width: 150px;
+        margin-top: 50px;
+    }
+
+    .my-name {
+        font-size: 2rem;
+    }
+
+    .links-box {
+        gap: 10px;
+    }
+
+    .logos-box{
+        width: 70%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .links {
+        font-size: 1rem;
+    }
+
+    .hire, .cv {
+        width: 100px;
+        font-size: 1.2rem;
+    }
+
+    .proyects, .skills, .contact {
+        gap: 20px;
+    }
+
+    .button-perfil-box {
+        gap: 10px;
+    }
+
+    .icons {
+        width: 50px;
+        height: 50px;
+    }
+
+    .icons-box{
+        border-radius: 0px;
+    }
+
+    .tittle-tec {
+        width: 50px;
+        font-size: 0.8rem;
+    }
+
+    .social-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .caja-img {
+        height: 70px;
+        width: 70px;
+    }
+
+    
+    .back-start{
+        height: 1530px;
+        top: 490px;
+    }
+
+    .email-box{
+        flex-direction: column;
+    }
 }
